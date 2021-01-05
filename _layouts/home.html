@@ -7,6 +7,16 @@
 <html>
 
 {% include head.html %}
+<head>
+
+<style> 
+.lSAction > a {
+	background-image: url("{{ site.baseurl }}/assets/images/controls.png");
+}
+</style>
+
+
+</head>
 
 <body>
 
@@ -37,7 +47,113 @@
         <!-- Div Inner is required for proper alignment of contents-->
         <section id="bgImage" class="major">
             <div class="inner">
-                {% include carouselImage.html %}
+                <div class="mainContainer">
+                    <!--slider------------------->
+                <ul id="autoWidth" class="cs-hidden">
+                    <!--1------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/Ant-Man.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/AntMan-logo.png" class="containerLogo" width="100px" style="height: auto;">
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                    <!--2------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/DeadPool.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/Deadpool-logo.png" class="containerLogo" >
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                    <!--3------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/SpiderMan.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/SpiderMan-logo.png" class="containerLogo" >
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                    <!--4------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/Venom.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/Venom-logo.png" class="containerLogo" >
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                    <!--5------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/Thor.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/Thor-logo.png" class="containerLogo">
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                    <!--6------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/IronMan.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/IronMan-logo.png" class="containerLogo" >
+                    <!--character-details-->
+                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                    </div>
+                    
+                    </div>
+                </li>
+                </ul>
+            </div>
             </div>
         </section>
 
@@ -60,5 +176,18 @@
     {% include footer.html %}
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
+<script type="text/javascript">
+    // JavaScript Document
+    $(document).ready(function() {	
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+</script>
 </html>
