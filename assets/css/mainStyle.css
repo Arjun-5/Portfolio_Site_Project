@@ -12,19 +12,6 @@ a{
 	text-decoration:none;
 }
 
-.width1, .width2 {
-    border-radius: 5px;
-    /*background-color: #17151E;*/
-    padding: 70px;
-    margin-top:-100px;
-    width: 50%;
-    float: left;
-  }
-  .landRow:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
 .box1{
 	background-repeat:no-repeat;
 	border: 5px solid rgb(113, 69, 126);
@@ -33,6 +20,12 @@ a{
 	border-radius: 20px;
 	width: 400px;
 	height: 210px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 20px 60px;
+	padding-top: 0px;
 } 
 .box2{
 	background-repeat:no-repeat;
@@ -42,6 +35,13 @@ a{
 	border-radius: 20px;
 	width: 400px;
 	height: 210px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 20px 60px;
+	padding-top: 0px;
+
 }  
 /*.box:hover{
 	transform-style: preserve-3d;
@@ -145,7 +145,7 @@ a{
 		height: 500px;
 	}
 	.box1, .box2{
-		width: 75%;
-		height: 75%;
+		width: 300px;
+		height: 150px;
 	}
 }
