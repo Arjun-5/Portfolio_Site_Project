@@ -1,41 +1,22 @@
-<!doctype html>
+<!--<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mainStyle.css" />
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/lightslider.css"/> -->
-<!--Jquery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
-<script type="text/javascript">
-    // JavaScript Document
-    $(document).ready(function() {	
-        $('#autoWidth').lightSlider({
-            autoWidth:true,
-            loop:true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-            } 
-        });  
-      });
-    </script>
-
-<style>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mainStyle.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/lightslider.css"/>
+Jquery -->
+<!-- <style> -->
+<style> 
 .lSAction > a {
 	background-image: url("{{ site.baseurl }}/assets/images/controls.png");
 }
-
 </style>
-
-</head>
-
-<body>
-	<div class="mainContainer">
+<div class="mainContainer">
 		<!--slider------------------->
-		<ul id="autoWidth" class="cs-hidden">
+	<ul id="autoWidth" class="cs-hidden">
 		<!--1------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -50,9 +31,9 @@
 		</div>
 		
 		</div>
-		</li>
+	</li>
 		<!--2------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -67,9 +48,9 @@
 		</div>
 		
 		</div>
-		</li>
+	</li>
 		<!--3------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -84,9 +65,9 @@
 		</div>
 		
 		</div>
-		</li>
+	</li>
 		<!--4------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -101,9 +82,9 @@
 		</div>
 		
 		</div>
-		</li>
+	</li>
 		<!--5------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -118,9 +99,9 @@
 		</div>
 		
 		</div>
-		</li>
+	</li>
 		<!--6------------------------------>
-  <li class="item-a">
+    <li class="item-a">
 	  <!--slider-box-->
 		<div class="containerBox">
 		<!-- <p class="marvel">MARVEL</p> -->
@@ -135,9 +116,22 @@
 		</div>
 		
 		</div>
-		</li>
-		</ul>
-	</div>
+	</li>
+	</ul>
+</div>
 
-</body>
-</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
+<script type="text/javascript">
+    // JavaScript Document
+    $(document).ready(function() {	
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+</script>
