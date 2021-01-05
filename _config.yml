@@ -3,7 +3,7 @@ title: Portfolio
 subtitle: Site Project
 email: youremailaddress@gmail.com
 description: About Our Group
-baseurl: #"/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
+baseurl: "/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address: 1234 Somewhere Road
