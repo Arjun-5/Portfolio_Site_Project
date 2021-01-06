@@ -1,0 +1,55 @@
+
+
+/* Developed by Frank Tielemans */
+
+/* CSS playground here, via these variables you can adjust the accentcolor, the position and dimensions of the bubble and textsize en color of the buttontext */
+
+:root {
+/* Width of the columsn */
+--boxwidth: 340px ;/*340px; */
+/* Height of the rows */
+--boxheight: 520px ;/*520px; */ 
+}
+
+body {
+  padding: 0px;
+  background: var(--bodycolor);
+}
+
+
+/* grid-container */
+.landcontainer {
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--boxwidth), 1fr));
+  grid-auto-rows: minmax(var(--boxheight), 1fr);
+  grid-gap: 150px;
+  box-sizing: border-box;
+}
+
+/* this is the card selecter */
+.landbox1, .landbox2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #3210a5;
+  height: 45%;
+  background-repeat:no-repeat;
+	border: 5px solid rgb(113, 69, 126);
+	border-style: groove ;
+	box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+	border-radius: 20px;
+}
+
+@media screen and (min-width:600px) {
+  
+  :root {
+--boxheight: 520px;
+  }
+  
+}
