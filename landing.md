@@ -1,21 +1,16 @@
 ---
 title: Contact Us
 layout: landing
-description: 'Contact us'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
 
-<!-- Main -->
 <div id="main">
-
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+<section id="one">	
+	<section id="contact">
+		<div class="inner">
+			<section>
+				<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" />
@@ -32,9 +27,9 @@ nav-menu: true
 					<li><input type="submit" value="Send Message" class="special" /></li>
 					<li><input type="reset" value="Clear" /></li>
 				</ul>
-			</form>
-		</section>
-		<section class="split">
+				</form>
+			</section>
+			<section class="split">
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
@@ -75,6 +70,5 @@ nav-menu: true
 		</section>
 	</div>
 </section>
-</div>
 </section>
 </div>
