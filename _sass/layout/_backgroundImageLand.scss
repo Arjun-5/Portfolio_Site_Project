@@ -18,11 +18,11 @@
 	border-bottom: 0 !important;
 	cursor: default;
 	height: 60vh;
-	margin-bottom: -3.25em;
+	margin-bottom: 0em; //-3.25
 	max-height: 32em;
 	min-height: 22em;
 	position: relative;
-	top: -3.25em;
+	top: 0em; //-3.25
 
 	&:after {
 		@include vendor('transition', 'opacity #{_duration(banner)} ease');
