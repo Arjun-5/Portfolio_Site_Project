@@ -181,7 +181,7 @@ a{
 	}
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
   
 	:root {
   --boxheightLand: 520px;
@@ -191,5 +191,12 @@ a{
 		width: 300px;
 		height: 150px;
 	}
-	
+	.containerBox{
+		width: 85%;
+		height: 75%;
+	}
+	.containerDetails p{
+		font-size: 10px;
+		width: 75%;
+	}
   }
