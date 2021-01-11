@@ -17,17 +17,31 @@
 		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
-		{% for page in site.html_pages %}
+
+		<li><a href="{{ site.baseurl }}/About_Us.html">About Us</a></li> 
+		<li><a href="{{ site.baseurl }}/More_Info.html">More Info</a></li> 
+		<li><a href="{{ site.baseurl }}/Contact_Us.html">Contact Us</a></li> 
+	</ul>
+
+
+
+
+
+	<!--	{% for page in site.html_pages %}
 		    {% if page.layout != "home" and page.nav-menu == true %}
 		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
-	<!-- Section has been commented -->
-	<!--<ul class="actions vertical">
+	
+	<ul class="actions vertical">
 		<li><a href="#contact" class="button special fit">Get Started</a></li>
 		
 		
 		 <li><a href="#" class="button fit">Log In</a></li> 
 	</ul>-->
+
+
+
+
 </nav>

@@ -1,8 +1,8 @@
 ---
 title: More Info
-layout: all_posts
+layout: More_Info
 description: 'More About Games'
-image: assets/images/pic07.jpg
+image: assets/images/pic06.jpg
 nav-menu: true
 ---
 

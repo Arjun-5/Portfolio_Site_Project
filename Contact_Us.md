@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-layout: landing
+layout: Contact_Us
 image: assets/images/pic07.jpg
 nav-menu: true
 ---

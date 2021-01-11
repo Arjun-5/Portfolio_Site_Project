@@ -12,6 +12,10 @@ a{
 	text-decoration:none;
 }
 
+.spacingh2{
+	text-align: center;
+}
+
 .box1{
 	background-repeat:no-repeat;
 	border: 5px solid rgb(113, 69, 126);
@@ -199,4 +203,8 @@ a{
 		font-size: 10px;
 		width: 75%;
 	}
+	.spacingh2{
+		margin-bottom: 5rem;
+	}
+
   }
