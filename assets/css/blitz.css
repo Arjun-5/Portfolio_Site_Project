@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--boxwidth), 1fr));
     grid-auto-rows: minmax(var(--boxheight), 1fr);
-    grid-gap: 80px;
+    grid-gap: 30px;
     justify-content: center;
     box-sizing: border-box;
   }
@@ -67,6 +67,7 @@
     box-sizing: border-box;
     background: #17151E;
     transition: 0.5s;
+  
   }
   
   .blitzbox:hover {

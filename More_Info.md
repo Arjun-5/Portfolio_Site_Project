@@ -1,8 +1,6 @@
 ---
 title: More Info
 layout: More_Info
-description: 'More About Games'
-image: assets/images/pic06.jpg
 nav-menu: true
 ---
 

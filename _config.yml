@@ -1,5 +1,5 @@
 # site settings
-title: Portfolio
+title: Company Name
 subtitle: Site Project
 email: youremailaddress@gmail.com
 description: About Our Group
@@ -19,15 +19,15 @@ tiles-count: 6
 
 # social settings
 500px_url:
-facebook_url:
+facebook_url: www.facebook.com
 github_url:
-gitlab_url: https://gitlab.com/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+gitlab_url: 
+googleplus_url: 
+instagram_url: www.instagram.com
+linkedin_url: www.linkedin.com
 pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+slack_url: www.slack.com
+twitter_url: www.twitter.com
 
 # build settings
 markdown: kramdown

@@ -19,6 +19,7 @@ img {
     max-width: 420px;
     position: relative;
     margin: auto;
+    max-height: 600px;
 }
 
 /* Caption text */
@@ -52,9 +53,7 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active {
-    background-color: #717171;
-}
+
 
 /* Fading animation */
 .fade {
