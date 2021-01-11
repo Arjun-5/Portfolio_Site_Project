@@ -7,12 +7,10 @@
 <html>
 
     {% include head.html %}
+    {% include header.html %}
 
     <body>
-
-        {% include header.html %}
-
-        <section id="banner" class="major">
+        <section id="bgImagecontact" class="major">
             <div class="inner">
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
@@ -27,19 +25,19 @@
             
         </section>
         
-        <section id="bgImageLand" class="major">
+        <section id="bgImagecontact" class="major">
             <div class="inner">
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
                 </span>
                 {{ content }}
-                <br>
+                <br><br><br><br>
 
                 {% include footer.html %}
 
             </div>           
         </section>
-    
+       
     
 </body>
 

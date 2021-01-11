@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--boxwidth), 1fr));
     grid-auto-rows: minmax(var(--boxheight), 1fr);
-    grid-gap: 30px;
+    grid-gap: 80px;
     justify-content: center;
     box-sizing: border-box;
   }
@@ -67,12 +67,11 @@
     box-sizing: border-box;
     background: #17151E;
     transition: 0.5s;
-  
   }
   
   .blitzbox:hover {
     cursor: pointer;
-        border-bottom: 1px solid #2a2f4a;
+        border-bottom: 0px solid #2a2f4a;
     box-shadow: 0 4px 15px #17151E;
     transform: translateY(-4px);
   }
@@ -114,7 +113,7 @@
     height: 45.5%;
     padding-top: 27px;
   /*     background: #fff radial-gradient(circle, rgba(0,0,0,0) , rgba(0,0,0,1) 300%); */
-    background: #242943;
+    background: #17151E;
     transition: 0.2s;
     color: #666;
     letter-spacing: -.6px;

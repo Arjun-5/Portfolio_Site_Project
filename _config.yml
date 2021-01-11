@@ -6,11 +6,11 @@ description: About Our Group
 baseurl: "/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: XXX Street Name
-city: City
-state: State
-zip_code: XXXXX
-country: Country
+street_address: Technische Universität Berlin 
+city: Straße des 17. Juni 135
+state:  Berlin
+zip_code: 10623
+country: Germany
 phone: (XXX) XXX-XXXX
 
 # homepage tiles
