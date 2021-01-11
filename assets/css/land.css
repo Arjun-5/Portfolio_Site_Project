@@ -37,13 +37,11 @@ body {
   display: block;
   overflow: hidden;
   box-sizing: border-box;
-  background: #3210a5;
   height: 45%;
-  background-repeat:no-repeat;
 	border: 5px solid rgb(113, 69, 126);
 	border-style: groove ;
 	box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
-	border-radius: 20px;
+  border-radius: 20px;
 }
 
 @media screen and (min-width:600px) {
@@ -52,4 +50,25 @@ body {
 --boxheight: 520px;
   }
   
+}
+
+@media(max-width:720px){
+  .landcontainer {
+  
+  grid-gap: 0px;
+  }
+
+  
+
+}
+
+
+@media screen and (max-width:500px) {
+  .landcontainer {
+ 
+  grid-gap: 0px;
+  }
+  
+
+
 }
