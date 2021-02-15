@@ -27,7 +27,7 @@ nav-menu: true
     </div>
 		<div class="blitzbox">
 		<div class="img-box" title="Sascha Lange">
-		<img src="{{ site.baseurl }}/assets/images/bio/8.JPG" alt=""></div>
+		<img src="{{ site.baseurl }}/assets/images/bio/8.jpg" alt=""></div>
       <div class="contentPosition"><br><br>
         <h2>Sascha Lange</h2>
         <h3>Student</h3>
@@ -58,7 +58,7 @@ nav-menu: true
         </p></div>
     </div>
   <div class="blitzbox">
-    <div class="img-box" title="Ivan Zea A"><img src="{{ site.baseurl }}/assets/images/bio/4.jpg" alt=""></div>
+    <div class="img-box" title="Ivan Zea A"><img src="{{ site.baseurl }}/assets/images/bio/4.JPG" alt=""></div>
       <div class="contentPosition"><br><br>
         <h2>Ivan Zea A</h2>
         <h3>Student</h3>
