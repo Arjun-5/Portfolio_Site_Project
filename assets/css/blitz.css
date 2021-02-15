@@ -249,3 +249,11 @@
     }
   
   }
+
+  @media screen and (min-width:1600px) {
+    
+    .contentPosition p {
+      font-size: 16px;
+    }
+  
+  }
