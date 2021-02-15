@@ -47,8 +47,7 @@
   /* grid-container */
   .blitzcontainer {
     margin: 0 auto;
-    padding: 2%;
-    max-width: 90%;
+    max-width: 85%;
     height: auto;
     position: relative;
     display: grid;
@@ -188,6 +187,7 @@
     position: relative;
     font-size: 1.4em;
     font-weight: 700;
+    padding-top: 3rem;
   }
   
   
@@ -239,5 +239,13 @@
     :root {
   --boxheight: 520px;
     }
+  
+  }
+
+  @media screen and (max-width:500px) {
     
+    .contentPosition h2 {
+      padding-top: 3rem;
+    }
+  
   }
