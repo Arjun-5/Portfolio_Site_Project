@@ -10,6 +10,10 @@
 <head>
     
 <style> 
+
+.card{
+    background-color:rgba(43, 5, 68, 0.2);
+}
 .lSAction > a {
     background-image: url("{{ site.baseurl }}/assets/images/controls.png");
     border-bottom: none;
@@ -67,7 +71,7 @@
         <section id="bgImage" class="major">
             <div class="inner">
                 <h2 class="spacingh2">CHOOSE YOUR GAME</h2>
-                <div class="mainContainer">
+                <div class="container-fluid">
                     <!--slider------------------->
                 <ul id="autoWidth" class="cs-hidden">
                     <!--1------------------------------>
@@ -181,24 +185,35 @@
         <!-- Two -->
         <section id="bgImageLand" class="major">
             <div class="inner">
-                <br><br><br><br>
-                <div class="landcontainer">
-                    <div>
-                            <a href="{{ site.baseurl }}/More_Info.html" style="border-bottom: none;">
-                                <div class = "landbox1"></div></a>
-                    
-                            </div>
-                  
-                    <div>
-                            <a href="{{ site.baseurl }}/About_Us.html" style="border-bottom: none;">
-                                <div class = "landbox2">
-                            </div>
-                            </a></div>
-                            
-                </div>
+                
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <img src="{{ site.baseurl }}/assets/images/More_Info.png" class="card-img-top" alt="moreinfo">
+                        <div class="card-body text-center">
+                          <a href="{{ site.baseurl }}/More_Info.html" class="btn btn-dark btn-lg">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <img src="{{ site.baseurl }}/assets/images/WhoWeAre.png" class="card-img-top" alt="whoweare">
+                        <div class="card-body text-center">
+                          <a href="{{ site.baseurl }}/About_Us.html" class="btn btn-dark btn-lg">Who We Are</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+        
+               
+
             </div>
-            
         </section>
+
+      
    
     {% include footer.html %}
 

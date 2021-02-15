@@ -1,9 +1,9 @@
 # site settings
 title: Company Name
 subtitle: Site Project
-email: youremailaddress@gmail.com
+email: artnoage@gmail.com
 description: About Our Group
-baseurl: "/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
+baseurl: #"/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address: Technische Universität Berlin 

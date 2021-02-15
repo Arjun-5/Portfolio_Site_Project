@@ -9,116 +9,78 @@ nav-menu: true
         <section>
             <div class="blitzcontainer">
   <div class="blitzbox">
-    <div class="img-box"  title="The fox and the lady"
-         ><img src="https://source.unsplash.com/featured/?lady, fox" alt=""></div>
+    <div class="img-box"  title="Malte Sagemueller"
+         ><img src="{{ site.baseurl }}/assets/images/bio/6.jpeg" alt=""></div>
       <div class="contentPosition">    <br><br>
-        <h2>The fox and the lady</h2>
-        <h3>allen dalton</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed </p>
+      <h2>Malte Sagemueller</h2>
+        <h3>Student</h3>
+        <p>Malte Sagemueller, TU Berlin Industrial Engineering and Management, Hanabi, Reinforcement Learning, Evolutionary Methods </p>
     </div> 
     </div>
     <div class="blitzbox">
-    <div class="img-box" title="Crying has been naughty">
-	<img src="https://source.unsplash.com/featured/?dream, emotion, face" alt=""></div>
+    <div class="img-box" title="Georg Kruse">
+	<img src="{{ site.baseurl }}/assets/images/bio/2.PNG" alt=""></div>
        <div class="contentPosition"><br><br>
-        <h2>Crying has been naughty</h2>
-        <h3>fabrice amant</h3>
-        <p> This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed</p></div>
+        <h2>Georg Kruse</h2>
+        <h3>Student</h3>
+        <p> Georg Kruse, TU Computer Science Master student, working on Atari games and the card game DouDizhu</p></div>
     </div>
-  <div class="blitzbox">
-  <div class="img-box" title="Spider puzzle">
-  <img src="https://source.unsplash.com/featured/?puzzle, paint, insect" alt=""></div>
-      <div class="contentPosition"><br><br>
-        <h2>Spider puzzle</h2>
-        <h3>carlos rodiguez armando</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed</p></div>
-		</div>
 		<div class="blitzbox">
-		<div class="img-box" title="Favorite of the brothers">
-		<img src="https://source.unsplash.com/featured/?family, kids" alt=""></div>
+		<div class="img-box" title="Sascha Lange">
+		<img src="{{ site.baseurl }}/assets/images/bio/8.JPG" alt=""></div>
       <div class="contentPosition"><br><br>
-        <h2>Favorite Of The Brothers</h2>
-        <h3>hans spieler</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed</p></div>
+        <h2>Sascha Lange</h2>
+        <h3>Student</h3>
+        <p>Sascha Lange - TU Berlin Computer Science M.Sc. Hanabi, Reinforcement Learning, Meta Learning</p></div>
     </div>
   <div class="blitzbox">
-    <div class="img-box" title="Rat in my garden">
-	<img src="https://source.unsplash.com/featured/?rat, garden, grass" alt=""></div>
+    <div class="img-box" title="Jing Li">
+	<img src="{{ site.baseurl }}/assets/images/bio/5.JPG" alt=""></div>
     <div class="contentPosition"><br><br>
-        <h2>Rat in my garden</h2>
-        <h3>farah conti</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed</p></div>
+        <h2>Jing Li</h2>
+        <h3>Student</h3>
+        <p>Jing Li, TU Berlin Computer Science M.Sc, Working on Card Game DouDizhu, Reinforcement Learning</p></div>
    </div>
   <div class="blitzbox">
-    <div class="img-box" title="Aware of the element">
-	<img src="https://source.unsplash.com/featured/?crowd, people" alt=""></div>
+    <div class="img-box" title="Paul Dieterich">
+	<img src="{{ site.baseurl }}/assets/images/bio/7.jpg" alt=""></div>
     <div class="contentPosition"><br><br>
-        <h2>Aware of the element</h2>
-        <h3>sven kowalski</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed</p></div>
+        <h2>Paul Dieterich</h2>
+        <h3>Student</h3>
+        <p>Paul Dieterich - TU Computer Science Master Student, ALPHAZERO, Working on Rengo, Cooperative GO, MCTS, POMDP</p></div>
     </div>
   <div class="blitzbox">
-    <div class="img-box" title="Picture in the city"><img src="https://source.unsplash.com/featured/?architecture, buildings" alt=""></div>
+    <div class="img-box" title="Aditya Mohan"><img src="{{ site.baseurl }}/assets/images/bio/1.jpeg" alt=""></div>
       <div class="contentPosition"><br><br>
-        <h2>Picture in the city</h2>
-        <h3>karel rodenburg</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed
+        <h2>Aditya Mohan</h2>
+        <h3>Student</h3>
+        <p>Aditya Mohan - M.Sc  Autonomous Systems, TU-Berlin and EURECOM, Working on Hanabi, Reinforcement Learning, Meta-Learning
         </p></div>
     </div>
   <div class="blitzbox">
-    <div class="img-box" title="Traitors and strangers"><img src="https://source.unsplash.com/featured/?politics, war" alt=""></div>
+    <div class="img-box" title="Ivan Zea A"><img src="{{ site.baseurl }}/assets/images/bio/4.jpg" alt=""></div>
       <div class="contentPosition"><br><br>
-        <h2>Traitors and strangers</h2>
-        <h3>Catharine Mason</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed
+        <h2>Ivan Zea A</h2>
+        <h3>Student</h3>
+        <p>Ivan Zea A.,TU Berlin Computational Neuroscience M.Sc. The Mind card game, Reinforcement Learning
         </p></div>
     </div>
    <div class="blitzbox">
-    <div class="img-box" title="Fashion killers" 
-         ><img src="https://source.unsplash.com/featured/?fashion, clothing" alt=""></div>
+    <div class="img-box" title="Umut Demirdizen" 
+         ><img src="{{ site.baseurl }}/assets/images/bio/9.jpg" alt=""></div>
       <div class="contentPosition"><br><br>
-        <h2>Fashion killers</h2>
-        <h3>martha fenneway</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed
+        <h2>Umut Demirdizen</h2>
+        <h3>Student</h3>
+        <p>Umut Demirdizen - TUB Computer Science B.Sc, Hanabi, Rule Based Evolution 
          </p></div>
     </div>
      <div class="blitzbox">
-    <div class="img-box" title="Consider it done" 
-         ><img src="https://source.unsplash.com/featured/?computer, apps" alt=""></div>
+    <div class="img-box" title="Vanessa Soisson" 
+         ><img src="{{ site.baseurl }}/assets/images/bio/10.jpg" alt=""></div>
       <div class="contentPosition"><br><br>
-        <h2>Consider it done</h2>
-        <h3>walter freeburg</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed
+        <h2>Vanessa Soisson</h2>
+        <h3>Student</h3>
+        <p>Vanessa Soisson - TUB Computer Engineering M.Sc., Hanabi, Reinforcement Learning
            </p></div>
-    </div>
-       <div class="blitzbox">
-    <div class="img-box" title="nowhere door" 
-         ><img src="https://source.unsplash.com/featured/?wood, furniture" alt=""></div>
-      <div class="contentPosition"><br><br>
-        <h2>nowhere door</h2>
-        <h3>kevin hanks</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed </p></div>
-    </div>
-         <div class="blitzbox">
-    <div class="img-box" title="spirits gone" 
-         ><img src="https://source.unsplash.com/featured/?sports, adventure, hiking" alt=""></div>
-      <div class="contentPosition"><br><br>
-        <h2>spirits gone</h2>
-        <h3>al macy junior</h3>
-        <p>This place wil be filled by the intro description about your game. You can add few more details to fill
-          the gap as needed
-           </p>
-          </div>
     </div>
 </div>
