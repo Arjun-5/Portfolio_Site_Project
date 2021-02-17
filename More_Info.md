@@ -6,7 +6,7 @@ nav-menu: true
 
 <div id="main">
 	<div class="inner">
-        <section>
+  <section>
             <div class="blitzcontainer">
   <div class="blitzbox">
     <div class="img-box"  title="Malte Sagemueller"
@@ -83,4 +83,7 @@ nav-menu: true
         <p>TUB Computer Engineering M.Sc., Hanabi, Reinforcement Learning
            </p></div>
     </div>
+</div>
+</section>
+</div>
 </div>

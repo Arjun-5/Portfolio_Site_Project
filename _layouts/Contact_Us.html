@@ -37,7 +37,7 @@
 
     </style>
     <body>
-        <section id="bgImagecontact" class="major">
+        <section id="bgImagecontact">
             <div class="inner">
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
@@ -57,14 +57,14 @@
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
                 </span>
+               
                 {{ content }}
-                <br><br><br><br>
-
-                {% include footer.html %}
-
+                <br> <br> <br> <br>
             </div>           
         </section>
        
+        {% include footer.html %}
+
     
 </body>
 
