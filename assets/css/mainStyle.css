@@ -16,6 +16,8 @@ a{
 	text-align: center;
 }
 
+
+
 .box1{
 	background-repeat:no-repeat;
 	border: 5px solid rgb(113, 69, 126);
@@ -155,6 +157,7 @@ a{
 	transform-style: preserve-3d;
 	transform: scale(1.08);
 	transition: all ease 0.3s;
+	cursor: pointer;
 	/*box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;*/
 }
 .containerBox:hover .marvel{

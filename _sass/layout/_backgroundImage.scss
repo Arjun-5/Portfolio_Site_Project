@@ -8,7 +8,8 @@
 
 #bgImage {
 	@include vendor('align-items', 'center');
-	@include vendor('background-image', 'url("../images/test1.gif")');
+	@include vendor('background-image', 'url("../images/66.jpg")');
+	//@include vendor('background-image', 'url("../images/test1.gif")');
 	@include vendor('display', 'flex');
 	@include padding(4em, 0, (2em, 0, 0, 0));
 	background-attachment: fixed;
@@ -26,7 +27,7 @@
 
 	&:after {
 		@include vendor('transition', 'opacity #{_duration(banner)} ease');
-		@include vendor('background-image', 'url("../images/66.jpg")');
+		//@include vendor('background-image', 'url("../images/66.jpg")');
 		@include vendor('transition-delay', '0.75s');
 		@include vendor('pointer-events', 'none');
 		//background-color: _palette(bg);
