@@ -1,37 +1,365 @@
 <!DOCTYPE html>
 <!--
-    Forty by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  -->
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
-  {% include head.html %}
-  {% include header.html %} 
-
-
-  <body>
-
-    
-    <section>
-      <div class="inner">
-          
-          <header class="major">
-
-              <h1>{{ page.title }}</h1>
-
-          </header>
-      </div>
-   </section>
+<head>
+{% include head.html %}
+{% include header.html %} 
+<style> 
 
 
-   
-                 
-      {{ content }}
+
+.gap-10{gap:5rem!important}
+.containertext {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.containertext img {vertical-align: middle;}
+
+.containertext .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.glow-on-hover {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.testlink {
+  --light: hsl(220, 50%, 90%);
+  --primary: hsl(255, 30%, 55%);
+  --focus: hsl(210, 90%, 50%);
+  --border-color: hsla(0, 0%, 100%, .2);
+  --global-background: hsl(220, 25%, 10%);
+  --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+  --shadow-1: hsla(236, 50%, 50%, .3);
+  --shadow-2: hsla(236, 50%, 50%, .4);  
+}
+
+
+
+a:focus {
+  outline: none;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  /* --m-background is set as inline style */
+  background: var(--m-background);
+}
+
+
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+
+  color: var(--light);
+  background: var(--background);
+  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.link-1 {
+  font-size: 1.8rem;
+
+  color: var(--light);
+  background: var(--background);
+  box-shadow: .4rem .4rem 2.4rem .2rem var(--shadow-1);
+  border-radius: 100rem;
+  padding: 1.4rem 3.2rem;
+
+  transition: .2s;
+}
+
+.link-1:hover,
+.link-1:focus {
+  transform: translateY(-.2rem);
+  box-shadow: 0 0 4.4rem .2rem var(--shadow-2);
+}
+
+.link-1:focus {
+  box-shadow:
+    0 0 4.4rem .2rem var(--shadow-2),
+    0 0 0 .4rem var(--global-background),
+    0 0 0 .5rem var(--focus);
+}
+
+.link-2 {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100rem;
+
+  color: inherit;
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.link-2::before {
+  content: '×';
+
+  transform: translateY(-.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  background: var(--focus);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+}
+
+</style>
+</head>
+<body>
+
+	
+	
+	<section class="major">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+  
+				<h1>{{ page.title }}</h1>
+  
+			</header>
+		</div>
+	 </section>
+	
+
+	 <a href="#m1-o" class="link-1" id="m1-c">Modal 2</a>
+  
+
+  <div class="testlink modal-container" id="m1-o" style="--m-background: hsla(0, 0%, 0%, .4);">
+    <div class="modal">
+      <h1>Modal 2 Title</h1>
+        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
      
+      <a href="#m1-c" class="link-2"></a>
+    </div>
+  </div>
+	
+	 <section class="major">
+		<div class="inner">
+			<div class="scene">
+			<div class="card-group gap-10">	
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="#m1-o"  id="m1-c" class="glow-on-hover text-center" id="m1-c">Watch Video</a>
+						<div class="testlink modal-container" id="m1-o" style="--m-background: hsla(0, 0%, 0%, .4);">
+							<div class="modal">
+							  <h1>Modal 2 Title</h1>
+								
+						
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+							 
+							  <a href="#m1-c" class="link-2"></a>
+							</div>
+						  </div>
+						
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+<br><br><br>
+	<section class="major">
+		<div class="inner">
+			<div class="scene">
+				<div class="card-group gap-10">	
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+					  </div>
+					</div>
+					</div>
+				
+				</div>
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card cardtest">
+				  <div class="card__face card__face--front">
+					<img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" />
+				  </div>
+				  <div class="card__face card__face--back">
+					<div class="containertext">
+					<img src="https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg" />
+					<div class="content">
+						<h3>Heading</h3>
+						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			  </div>
+		</div>
+	</section>
+<br><br>
+	 {% include footer.html %}
 
-{% include footer.html %}
 
-  </body>
-
+</body>
 </html>
