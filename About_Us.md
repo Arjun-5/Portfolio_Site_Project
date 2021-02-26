@@ -83,6 +83,15 @@ nav-menu: true
         <p>TUB Computer Engineering M.Sc., Hanabi, Reinforcement Learning
            </p></div>
     </div>
+    <div class="blitzbox">
+    <div class="img-box" title="Christoph Bornett" 
+         ><img src="{{ site.baseurl }}/assets/images/bio/11.jpg" alt=""></div>
+      <div class="contentPosition">
+        <h2>Christoph Bornett</h2>
+        <h3>Student</h3>
+        <p>TUB Computer Science B.Sc., Quoridor, Reinforcement Learning 
+         </p></div>
+    </div>
 </div>
 </section>
 </div>

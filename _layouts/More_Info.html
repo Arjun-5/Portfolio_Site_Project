@@ -79,7 +79,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+   
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -91,116 +91,55 @@
     100% { background-position: 0 0; }
 }
 
-
-.testlink {
-  --light: hsl(220, 50%, 90%);
-  --primary: hsl(255, 30%, 55%);
-  --focus: hsl(210, 90%, 50%);
-  --border-color: hsla(0, 0%, 100%, .2);
-  --global-background: hsl(220, 25%, 10%);
-  --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
-  --shadow-1: hsla(236, 50%, 50%, .3);
-  --shadow-2: hsla(236, 50%, 50%, .4);  
-}
-
-
-
-a:focus {
-  outline: none;
-}
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-
-  /* --m-background is set as inline style */
-  background: var(--m-background);
-}
-
-
-.modal-container:target {
-  display: flex;
-}
-
-.modal {
-  width: 60rem;
-  padding: 4rem 2rem;
-  border-radius: .8rem;
-
-  color: var(--light);
-  background: var(--background);
-  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
-  position: relative;
-
+.card-custom {
   overflow: hidden;
+  min-height: 450px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  background: #17151E;
 }
 
-.link-1 {
-  font-size: 1.8rem;
-
-  color: var(--light);
-  background: var(--background);
-  box-shadow: .4rem .4rem 2.4rem .2rem var(--shadow-1);
-  border-radius: 100rem;
-  padding: 1.4rem 3.2rem;
-
-  transition: .2s;
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+  
 }
 
-.link-1:hover,
-.link-1:focus {
-  transform: translateY(-.2rem);
-  box-shadow: 0 0 4.4rem .2rem var(--shadow-2);
-}
-
-.link-1:focus {
-  box-shadow:
-    0 0 4.4rem .2rem var(--shadow-2),
-    0 0 0 .4rem var(--global-background),
-    0 0 0 .5rem var(--focus);
-}
-
-.link-2 {
-  width: 4rem;
-  height: 4rem;
-  border: 1px solid var(--border-color);
-  border-radius: 100rem;
-
-  color: inherit;
-  font-size: 2.2rem;
-
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: .2s;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(575px - 5vw);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #17151E;
+  
 }
 
-.link-2::before {
-  content: '×';
-
-  transform: translateY(-.1rem);
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+  
 }
 
-.link-2:hover,
-.link-2:focus {
-  background: var(--focus);
-  border-color: var(--focus);
-  transform: translateY(-.2rem);
-}
 
 </style>
 </head>
@@ -222,142 +161,214 @@ a:focus {
 	 </section>
 	
 
-	 <a href="#m1-o" class="link-1" id="m1-c">Modal 2</a>
-  
 
-  <div class="testlink modal-container" id="m1-o" style="--m-background: hsla(0, 0%, 0%, .4);">
-    <div class="modal">
-      <h1>Modal 2 Title</h1>
-        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-     
-      <a href="#m1-c" class="link-2"></a>
-    </div>
-  </div>
-	
 	 <section class="major">
 		<div class="inner">
-			<div class="scene">
-			<div class="card-group gap-10">	
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="#m1-o"  id="m1-c" class="glow-on-hover text-center" id="m1-c">Watch Video</a>
-						<div class="testlink modal-container" id="m1-o" style="--m-background: hsla(0, 0%, 0%, .4);">
-							<div class="modal">
-							  <h1>Modal 2 Title</h1>
-								
-						
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-							 
-							  <a href="#m1-c" class="link-2"></a>
-							</div>
-						  </div>
-						
-					  </div>
+	 
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+				  <div class="card card-custom border-white border-0">
+					<div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					<div class="card-custom-avatar">
+					  <img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
+					</div>
+					<div class="card-body" style="overflow-y: auto">
+					  <h3 class="card-title">Game 1</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
 					</div>
 				  </div>
 				</div>
-				
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+				<div class="col">
+					<div class="card card-custom border-white border-0">
+					  <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					  <div class="card-custom-avatar">
+						<img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
 					  </div>
+					  <div class="card-body" style="overflow-y: auto">
+						<h3 class="card-title">Game 2</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
 					</div>
 				  </div>
 				</div>
-				
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
+				  <div class="col">
+					<div class="card card-custom  border-white border-0">
+					  <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					  <div class="card-custom-avatar">
+						<img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
 					  </div>
+					  <div class="card-body" style="overflow-y: auto">
+						<h3 class="card-title">Game 3</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
+					</div>
+				  </div>
+				</div>
+				  <div class="col">
+					<div class="card card-custom  border-white border-0">
+					  <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					  <div class="card-custom-avatar">
+						<img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
+					  </div>
+					  <div class="card-body" style="overflow-y: auto">
+						<h3 class="card-title">Game 4</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
+					</div>
+				  </div>
+				</div>
+				  <div class="col">
+					<div class="card card-custom  border-white border-0">
+					  <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					  <div class="card-custom-avatar">
+						<img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
+					  </div>
+					  <div class="card-body" style="overflow-y: auto">
+						<h3 class="card-title">Game 5</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
+					</div>
+				  </div>
+				</div>
+				  <div class="col">
+					<div class="card card-custom border-white border-0">
+					  <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+					  <div class="card-custom-avatar">
+						<img class="img-fluid" src="{{ site.baseurl }}/assets/images/7060.png" alt="Avatar" />
+					  </div>
+					  <div class="card-body" style="overflow-y: auto">
+						<h3 class="card-title">Game 6</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
+			
+					  <button type="button" class="btn  glow-on-hover" data-bs-toggle="modal" data-bs-target="#exampleModal1">Watch Video
+									</button>
+									<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered modal-lg">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											
+											 <div class="ratio ratio-16x9">
+												<iframe src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe>
+											</div>
+										  </div>
+					
+										</div>
+									  </div>
+									</div>
 					</div>
 				  </div>
 				</div>
 			  </div>
-			</div>
+
+			 
 		</div>
 	</section>
-<br><br><br>
-	<section class="major">
-		<div class="inner">
-			<div class="scene">
-				<div class="card-group gap-10">	
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
-					  </div>
-					</div>
-					</div>
-				
-				</div>
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="card cardtest">
-				  <div class="card__face card__face--front">
-					<img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" />
-				  </div>
-				  <div class="card__face card__face--back">
-					<div class="containertext">
-					<img src="https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg" />
-					<div class="content">
-						<h3>Heading</h3>
-						<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum ponderum tractatos ei.</p>
-						<a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover text-center" type="button">Find More</a>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  
-			  </div>
-		</div>
-	</section>
-<br><br>
+	 
+
+
+	
+
+
 	 {% include footer.html %}
 
 
