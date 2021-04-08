@@ -49,10 +49,37 @@
 <section class="major">
     <div class="inner">
 
-  <p>Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis.</p>
+  <p>If you want to learn how to play the game, check this video out:</p>
+
   <div class="ratio ratio-16x9">
-    <iframe style="padding: 7%" src="https://drive.google.com/file/d/1mp9vnbf3wa9_iMAqcwVudf2TXBvq7MKB/preview" title="YouTube video" allowfullscreen></iframe></div><br>
-  <p>Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.</p>
+  <iframe style="padding: 7%"  src="https://www.youtube.com/embed/ZEZe7seOH1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div><br>
+  <p>For more detailed rules, please check: <a href src="https://www.pagat.com/climbing/doudizhu.html">Full rules of Fight the Landlord.</a> <br><br>
+    Players consider the game to be very interesting and challenging, because it combines 
+    random and cooperative aspects. The classic DouDiZhu game involves three players, 
+    two of whom, called “the peasants”, need to cooperate against one another, called “the 
+    landlord”. The peasants win if any of their hands are played first; otherwise, the landlord 
+    wins. The profits or losses in the game are shared between the peasants while the 
+    landlord carries himself alone, which means the game is a zero-sum game satisfying 
+    the Nash Equilibrium. As in most card games, the starting hand of DouDiZhu can 
+    primarily affect the outcome of the game. The rules of DouDiZhu are not complicated, 
+    however, the two essential aspects of winning the game required strategies and skills. <br> <br>
+    Since there are numerous card combinations at each time step, the number of possible 
+    actions is huge. Because of this discrete action space and the complicated action 
+    relationships, the game is a quite challenging reinforcement learning environment. 
+    Moreover, compared to games like Chess and Go, DouDiZhu is an incomplete 
+    information game that usually has more complicated solutions as well as an unique 
+    game that emphasizes both competition and cooperation. <br><br>
+    Our work is based on the environment from <a href src="http://rlcard.org/">RLCard: A Toolkit for Reinforcement 
+    Learning in Card Games></a>, you can find the original code of the RLCard framework here: <a href src="https://github.com/datamllab/rlcard">https://github.com/datamllab/rlcard</a>. We have slightly modified the RLCard environment 
+    for state encoding and state space. <br><br>
+    In the beginning of our work we want to design several Doudizhu agents by applying 
+    different deep reinforcement learning approaches like the popular <a href src="https://arxiv.org/abs/1710.02298">Rainbow DQN</a>
+    architecture with different distributional components as well as <a href src="https://arxiv.org/abs/1603.01121">Neural Fictitious SelfPlay</a> and others. Our first milestone is to beat the rule-based agents of the RLCard 
+    Paper as landlord. We then will evaluate the impact of changes to the state encodings 
+    of the original RLCard environment as well as different training settings. Once we 
+    accomplish that we will pursue the most promising approaches and see how far we can 
+    push them.</p>
 
 </div>
 </section>

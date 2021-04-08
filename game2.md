@@ -9,7 +9,11 @@ nav-menu: true
     <div class=" h-100 d-flex justify-content-center align-items-center">
   
   <img class="gameimage" src="{{ site.baseurl }}/assets/images/g2.png">
-      <p>Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius uam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt</p>
+      <p>Hanabi is a very fun game to play, and it is currently our main project. The game contains many 
+complexities like Radomness, partial observability, big observation space, etc. However, the biggest 
+challenge with the game is the existence of a non-verbal way to communicate information. This 
+information, that is called intention by some, is communicated through the choice of action and 
+specifically through a hint system. </p>
   
 </div>
     </div>

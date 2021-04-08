@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+<head>
+  {% include head.html %}
+  {% include header.html %} 
+
+<style>
+#bggame{
+    height: 60vh;
+}
+.gameimage{
+	width:25%;
+	float: left;
+	margin-right: 50px;
+    margin-top: -50px;
+}
+
+</style>
+
+</head>
+  <body>
+
+    
+    <section class="major">
+      <div class="inner">
+          
+          <header class="text-center">
+
+              <h1>Quantum Chess</h1>
+              
+
+          </header>
+      </div>
+   </section>
+
+   
+   <section id="bggame" class="major">
+    <div class="inner">
+        
+       
+        {{ content }}
+    </div>           
+</section>
+<section class="major">
+    <div class="inner">
+
+
+  <div class="ratio ratio-16x9">
+    <iframe style="padding: 7%" src="https://www.youtube.com/embed/ec-Mb8OJuRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div><br>
+  <p>The game can be found on STEAM <a href src="https://store.steampowered.com/app/453870/Quantum_Chess/">(https://store.steampowered.com/app/453870/Quantum_Chess/).</a> <br><br>
+    At the moment, we do not have someone working on the game, and we are looking for students with 
+passion in both Physics and Machine learning to take it as a Master’s Thesis. 
+
+</p>
+
+</div>
+</section>
+    
+
+{% include footer.html %}
+
+  </body>
+
+</html>
