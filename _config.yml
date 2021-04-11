@@ -1,6 +1,6 @@
 # site settings
 title: Metaskepsis
-subtitle: Site Project
+subtitle: Research Project
 email: artnoage@gmail.com
 description: About Our Group
 baseurl: "/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
@@ -28,6 +28,8 @@ linkedin_url: www.linkedin.com
 pinterest_url:
 slack_url: www.slack.com
 twitter_url: www.twitter.com
+youtube_url: https://www.youtube.com/channel/UCM7vWpTSmnZB5ZpMdc44mNw
+globe_url: http://vaiosphere.com/
 
 # build settings
 markdown: kramdown

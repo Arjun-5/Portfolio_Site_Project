@@ -8,6 +8,15 @@ nav-menu: true
 	<div class="inner">
   <section>
             <div class="blitzcontainer">
+            <div class="blitzbox">
+    <div class="img-box" title="Vaios laschos" 
+         ><img src="{{ site.baseurl }}/assets/images/bio/13.jpg" alt=""></div>
+      <div class="contentPosition">
+        <h2>Vaios laschos</h2>
+        <h3>Team Coordinator</h3>
+        <p>Working for WIAS, PhD in Applied Mathematics
+         </p></div>
+    </div>
   <div class="blitzbox">
     <div class="img-box"  title="Malte Sagemueller"
          ><img src="{{ site.baseurl }}/assets/images/bio/6.jpeg" alt=""></div>
@@ -92,6 +101,16 @@ nav-menu: true
         <p>TUB Computer Science B.Sc., Quoridor, Reinforcement Learning 
          </p></div>
     </div>
+    <div class="blitzbox">
+    <div class="img-box" title="Andreas" 
+         ><img src="{{ site.baseurl }}/assets/images/bio/12.jpg" alt=""></div>
+      <div class="contentPosition">
+        <h2>Andreas</h2>
+        <h3>Student</h3>
+        <p>TU Berlin Mathematics, working on Reinforcement Learning, "Hanabi" 
+         </p></div>
+    </div>
+    
 </div>
 </section>
 </div>
