@@ -1,6 +1,6 @@
 # site settings
 title: Metaskepsis
-subtitle: Research Project
+subtitle:
 email: artnoage@gmail.com
 description: About Our Group
 baseurl: "/Portfolio_Site_Project" # the subpath of your site, e.g. /blog
