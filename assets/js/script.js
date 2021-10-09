@@ -3,7 +3,7 @@ $(document).ready(function(){
     $.get(
         "https://www.googleapis.com/youtube/v3/channels",{
             part: 'contentDetails',
-            ID: channelID,
+            id: channelID,
             key: 'AIzaSyAw8Q35GO2sRAu-QFJ98B7Q4dfF0Nb-zVg'},
             function(data){
                 $.each(data.items,function(i,item){
