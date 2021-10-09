@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+{% include head.html %}
+{% include header.html %} 
+<style> 
+  
+
+</style>
+</head>
+<body>
+
+	
+	
+	<section class="major">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+  
+				<h1>{{ page.title }}</h1>
+  
+			</header>
+		</div>
+	 </section>
+	
+
+
+	 <section class="major">
+		<div class="inner">
+	 
+            
+			<title>Youtube Videos</title>
+     
+        
+        
+    
+    
+        
+            <h1>Metaskpesis Youtube Videos</h1>
+            <ul id="Video_Results"></ul>
+        
+    
+			 
+		</div>
+	</section>
+	 
+
+
+	<br><br>
+
+
+	 {% include footer.html %}
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/script.js"></script>
+</html>
