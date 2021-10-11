@@ -26,8 +26,13 @@ $(document).ready(function(){
                         console.log(item);
                         videoTitle = item.snippet.title;
                         videoId = item.snippet.resourceId.videoId;
-                        output = '<h3 id="vid-title">'+videoTitle+'</h3><li id="li-margin"><iframe height="500" width="800" src =\"//www.youtube.com/embed/'+videoId+'\"</iframe></li>';
+                        videoDes = (item.snippet.description == "") ?"No Description Is Provided":item.snippet.description;
+                        output = '<p id="vid-title">'+videoTitle+'</p>'+'<p id="vidDec">'+videoDes+'</p>'+
+                        '<li id="li-margin"><iframe height="500" width="800" src =\"//www.youtube.com/embed/'+videoId+'\"</iframe></li>';
+                         
+                    
                         $('#Video_Results').append(output);
+                       
                     })
                 }
         );

@@ -1,5 +1,5 @@
 ---
 layout: YTvids
-title: Metaskpesis Youtube Videos
+title: RL and Metalearning Videos
 nav-menu: true
 ---
